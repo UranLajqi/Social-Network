@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: teal;
+}
+
+form#login, form#signup, #forgotPass {
+    background-color: rgb(245, 245, 245);
+    padding: 20px 30px;
+    line-height: 3.5;
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* email, password */
+#login input, #signup input, #forgotPass input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(230, 230, 230);
+}
+
+/* log in button */
+#login input[value='Log In'] {
+    background-color: rgb(5, 17, 255);
+    color: white;
+}
+
+#login input[value='Log In']:hover {
+    background-color: rgba(5, 17, 255,0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* forgot password */
+#login a {
+    display: block;
+    text-align: center;
+    margin-top: -10px;
+    text-decoration: none;
+}
+
+#login a:visited, #login a:link {
+    color: black;
+}
+
+/* horizontal rule */
+hr {
+    border: 0.1px solid rgb(105, 97, 97);
+}
+
+/* Create New Account button */
+#login input[value='Create New Account'] {
+    margin-top: 18px;
+    background-color:teal;
+    color: white;
+}
+
+#login input[value='Create New Account']:hover {
+    background-color: rgba(0, 128, 128,0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#login input[type='button'], input[type='submit'] {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Sign Up */
+#signup input[value='Sign Up'] {
+    background-color: rgb(99, 223, 223);
+    color: white;
+    font-size: 18px;
+}
+
+#signup input[value='Sign Up']:hover {
+    background-color: rgba(99, 223, 223, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* radio buttonat */
+#signup input[type='radio'] {
+    width: 40px;
+}
