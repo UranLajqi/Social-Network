@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(99, 223, 223);
+}
+
+form#signup {
+    line-height: 3;
+}
