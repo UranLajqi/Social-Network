@@ -31,51 +31,6 @@ form#login, form#signup, #forgotPass {
     border: 0.5px solid rgb(230, 230, 230);
 }
 
-/* log in button */
-#login input[value='Log In'] {
-    background-color: rgb(5, 17, 255);
-    color: white;
-}
-
-#login input[value='Log In']:hover {
-    background-color: rgba(5, 17, 255,0.9);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* forgot password */
-#login a {
-    display: block;
-    text-align: center;
-    margin-top: -10px;
-    text-decoration: none;
-}
-
-#login a:visited, #login a:link {
-    color: black;
-}
-
-/* horizontal rule */
-hr {
-    border: 0.1px solid rgb(105, 97, 97);
-}
-
-/* Create New Account button */
-#login input[value='Create New Account'] {
-    margin-top: 18px;
-    background-color:teal;
-    color: white;
-}
-
-#login input[value='Create New Account']:hover {
-    background-color: rgba(0, 128, 128,0.9);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-#login input[type='button'], input[type='submit'] {
-    cursor: pointer;
-    font-size: 16px;
-}
-
 /* Sign Up */
 #signup input[value='Sign Up'] {
     background-color: rgb(99, 223, 223);
