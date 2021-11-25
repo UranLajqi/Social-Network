@@ -19,18 +19,18 @@ if (!empty($_POST['email']) && !empty($_POST['password']))
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        if($row["email"] == $email && $row["password"] == $password) {
-            $_SESSION["fname"] = $row['fname'];
-            $_SESSION["lname"] = $row['lname'];
-            header("Location: ./html/home.html");
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+            if($row["email"] == $email && $row["password"] == $password) {
+                $_SESSION["fname"] = $row['fname'];
+                $_SESSION["lname"] = $row['lname'];
+                header("Location: ./php/home.php");
 
+            }
+            else  {
+                echo "paassi gabim";
+            }
         }
-        else  {
-            echo "paassi gabim";
-        }
-    }
     } else {
         echo "0 results";
     }
@@ -61,7 +61,7 @@ $conn->close();
     <br>
     <a href="./html/forgotPassword.html">Forgot password?</a>
     <hr>
-    <input type="button" value="Create New Account" onclick="createNewAccount()">
+    <input type="button" value="Create New Account" onclick="window.location.href = './php/create_new_account.php';">
 </form>
 
 </body>

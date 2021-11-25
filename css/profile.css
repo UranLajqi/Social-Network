@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#lajmet {
+    font-size: 15px;
+    line-height: 1.2;
+    width: 80vh;
+    height: auto;
+    background-color: white;
+    padding: 15px 25px;
+    box-shadow: 10px 15px 15px 10px grey;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 0.5px solid lightgrey;
+}
+
+textarea {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+
+input[type='submit'] {
+    background-color: lightskyblue;
+    color: white;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: rgba(135, 206, 250, 0.8);
+}
