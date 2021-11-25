@@ -12,6 +12,7 @@ if ($conn->connect_error) {
 if (!empty($_POST['fname']) && !empty($_POST['lname']) && !empty($_POST['phone']) && 
     !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['birthdate'])) 
 {
+  echo $_POST['birthdate'];
   $fname = $_POST['fname'];
   $lname = $_POST['lname'];
   $phone = $_POST['phone'];
